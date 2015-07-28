@@ -1,6 +1,13 @@
-# resources
-Assets for organizing Write the Docs conferences and meetups. To use, just fork the repository and adapt the content for your event. 
+# Resources
 
-If you create a new asset type that you feel could be useful to other organizers, feel free to create a pull request and share!
+This repository contains the image assets for the Write the Docs conference and
+meetups.
 
-For guidelines and best practices on organizing WTD events, see <link>.
+# License
+
+These resources are provided for use by Write the Docs meetups and Write the
+Docs conferences under the Creative Commons license [CC BY-NC-SA 4.0][license].
+Commercial use of these assets is prohibited without a license granting
+commercial use.
+
+[license]: http://creativecommons.org/licenses/by-nc-sa/4.0/
