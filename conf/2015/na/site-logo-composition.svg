@@ -47,16 +47,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="879.41528"
-     inkscape:cy="408.07973"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="1119.1048"
+     inkscape:cy="331.62154"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1914"
-     inkscape:window-height="1048"
+     inkscape:window-width="1366"
+     inkscape:window-height="723"
      inkscape:window-x="0"
      inkscape:window-y="26"
      inkscape:window-maximized="0">
@@ -96,7 +96,7 @@
      transform="translate(0,-252.36218)">
     <text
        xml:space="preserve"
-       style="font-size:200px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:87.00000047999998287%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#f2f0eb;fill-opacity:1;stroke:none;font-family:Bree Serif;-inkscape-font-specification:Bree Serif"
+       style="font-size:200px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:87.00000048%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#f2f0eb;fill-opacity:1;stroke:none;font-family:Bree Serif;-inkscape-font-specification:Bree Serif"
        x="733.67358"
        y="451.40265"
        id="text2989"
@@ -105,25 +105,26 @@
          id="tspan2991"
          x="733.67358"
          y="451.40265"
-         style="font-weight:normal;-inkscape-font-specification:Bree Serif;fill:#f2f0eb;fill-opacity:1">WRITE</tspan><tspan
+         style="font-weight:normal;fill:#f2f0eb;fill-opacity:1;-inkscape-font-specification:Bree Serif"
+         dx="0 2 2 2">WRITE</tspan><tspan
          sodipodi:role="line"
          x="733.67358"
          y="625.40265"
          id="tspan2993"
-         dx="0 0 -1.0101526"
-         style="font-weight:normal;-inkscape-font-specification:Bree Serif;fill:#f2f0eb;fill-opacity:1">THE</tspan><tspan
+         dx="0 0 -2.0101526"
+         style="font-weight:normal;fill:#f2f0eb;fill-opacity:1;-inkscape-font-specification:Bree Serif">THE</tspan><tspan
          sodipodi:role="line"
          x="733.67358"
          y="799.40265"
          id="tspan2995"
-         dx="0 -5.0507622 -5.0507627 -7.0710673"
-         style="font-weight:normal;-inkscape-font-specification:Bree Serif;fill:#f2f0eb;fill-opacity:1">DOCS</tspan><tspan
+         dx="0 -5.0507622 -5.0507627 -8.0710678"
+         style="font-weight:normal;fill:#f2f0eb;fill-opacity:1;-inkscape-font-specification:Bree Serif">DOCS</tspan><tspan
          sodipodi:role="line"
          x="733.67358"
          y="973.40265"
          id="tspan2997"
-         dx="0 -6.060915 -5.0507627"
-         style="font-weight:normal;-inkscape-font-specification:Bree Serif;fill:#f2f0eb;fill-opacity:1">2015</tspan></text>
+         dx="0 -9.060915 -10.050762 -1"
+         style="font-weight:normal;fill:#f2f0eb;fill-opacity:1;-inkscape-font-specification:Bree Serif">2015</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:100.33968353px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient3785);fill-opacity:1;stroke:none;font-family:Aleo;-inkscape-font-specification:Aleo"
@@ -135,16 +136,19 @@
          id="tspan3773"
          x="770.84204"
          y="696.91321"
-         style="font-size:100.33968353px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3785);fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light">MAY 17-19</tspan><tspan
+         style="font-size:100.33968353px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3785);fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light"
+         dx="0 -1 -17 0 0 -4 0 0 -6">MAY 17-19</tspan><tspan
          sodipodi:role="line"
          x="770.84204"
          y="797.25287"
          id="tspan3775"
-         style="font-size:100.33968353px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3785);fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light">PORTLAND</tspan><tspan
+         style="font-size:100.33968353px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3785);fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light"
+         dx="0 1 -4 -6 3 -1 -1 1">PORTLAND</tspan><tspan
          sodipodi:role="line"
          x="770.84204"
          y="897.59259"
          id="tspan3777"
-         style="font-size:100.33968353px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3785);fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light">OREGON</tspan></text>
+         style="font-size:100.33968353px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3785);fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light"
+         dx="0 -4 -1 -1 2 -3">OREGON</tspan></text>
   </g>
 </svg>
