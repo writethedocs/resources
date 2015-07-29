@@ -4,7 +4,8 @@ CONF ?= na
 
 INPUT_FILES = \
 	sign-large.svg \
-	hoodie.svg
+	hoodie.svg \
+	sticker.svg
 
 INPUT_EXTRA_FILES = \
 	sign-tall-registration.svg \
@@ -34,11 +35,16 @@ TRANSFORM_OPTS = \
 endif
 
 # Rules
-assets: deps $(OUTPUT_FILES) $(OUTPUT_EXTRA_FILES)
+assets: deps asset-pdfs asset-images
+
+asset-pdfs: $(OUTPUT_FILES) $(OUTPUT_EXTRA_FILES)
+
+asset-images: $(CONF)/sticker.png
 
 clean:
 	-rm $(INPUT_CONF_FILES)
 	-rm $(OUTPUT_FILES)
+	-rm $(CONF)/sticker.png
 
 deps:
 	[ -d '$(CONF)/' ] || mkdir -p '$(CONF)/'
@@ -92,6 +98,16 @@ $(CONF)/badge-example.svg: badge.svg
  $(CONF)/%.svg: %.svg
 	$(TRANSFORM) $(TRANSFORM_OPTS) $? > $@
 
+# Image output
+$(CONF)/%.png: $(CONF)/%.svg
+ifndef INKSCAPE
+	echo 'Skipping Inkscape PNG generation, install Inkscape for PNG export'
+	exit 1
+else
+	$(INKSCAPE) $(INKSCAPE_OPTS) --export-dpi=600 --file=$? --export-png=$@
+endif
+
+# PDF output
 $(CONF)/%.pdf: $(CONF)/%.svg
 ifndef INKSCAPE
 	echo 'Skipping Inkscape PDF generation, install Inkscape for PDF export'
