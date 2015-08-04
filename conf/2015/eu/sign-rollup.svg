@@ -10,8 +10,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="2834.6455"
-   height="7086.6138"
+   width="2976.3779"
+   height="7228.3467"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
@@ -702,43 +702,47 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.0625"
-     inkscape:cx="1517.3228"
-     inkscape:cy="3266.4772"
+     inkscape:zoom="0.25"
+     inkscape:cx="1309.967"
+     inkscape:cy="653.01646"
      inkscape:document-units="cm"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      showgrid="false"
-     units="ft"
+     units="cm"
      showguides="false"
      inkscape:guide-bbox="true"
      inkscape:window-width="1366"
      inkscape:window-height="719"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-bottom="2"
+     fit-margin-right="2">
     <sodipodi:guide
        orientation="0,1"
-       position="-784,6023.622"
+       position="-713.13386,6094.4882"
        id="guide3969" />
     <sodipodi:guide
        orientation="0,1"
-       position="-880,4074.8031"
+       position="-809.13386,4145.6693"
        id="guide7510" />
     <sodipodi:guide
        orientation="0,1"
-       position="-1447.1222,602.3622"
+       position="-1376.2561,673.22844"
        id="guide10132" />
     <sodipodi:guide
        orientation="0,1"
-       position="-281.57092,1062.9921"
+       position="-210.70478,1133.8583"
        id="guide10304" />
     <sodipodi:guide
        orientation="0,1"
-       position="-464,2692.9134"
+       position="-393.13386,2763.7796"
        id="guide10402" />
     <sodipodi:guide
        orientation="0,1"
-       position="-336,2125.9843"
+       position="-265.13386,2196.8505"
        id="guide10406" />
   </sodipodi:namedview>
   <metadata
@@ -749,7 +753,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -757,21 +761,79 @@
      inkscape:label="Background"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,6034.289)"
+     transform="translate(70.866142,6105.1557)"
      style="display:inline">
     <rect
-       style="fill:#424670;fill-opacity:1;stroke:#33343c;stroke-width:2.67183399;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#424670;fill-opacity:1;stroke:none"
        id="rect3098"
-       width="2831.9739"
-       height="7083.9424"
-       x="1.335917"
-       y="-6032.9536" />
+       width="2870.0789"
+       height="7122.0474"
+       x="-17.716536"
+       y="-6052.0059" />
+    <g
+       id="g3940">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3918"
+         d="m -70.402496,-6034.7323 52.289736,0 0,0"
+         style="fill:none;stroke:#000000;stroke-width:0.9048447px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3938"
+         d="m 0.51925439,-6104.6362 0,52.1111 0.66227811,0"
+         style="fill:none;stroke:#000000;stroke-width:1.03850937px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(0,1,-1,0,-3198.7941,-6035.1501)"
+       style="display:inline"
+       id="g3940-3">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3918-0"
+         d="m -70.402496,-6034.7323 52.289736,0 0,0"
+         style="fill:none;stroke:#000000;stroke-width:0.9048447px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3938-1"
+         d="m 0.51925439,-6104.6362 0,52.1111 0.66227811,0"
+         style="fill:none;stroke:#000000;stroke-width:1.03850937px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(-1,0,0,-1,2836.3465,-4981.9644)"
+       style="display:inline"
+       id="g3940-8">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3918-9"
+         d="m -70.402496,-6034.7323 52.289736,0 0,0"
+         style="fill:none;stroke:#000000;stroke-width:0.9048447px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3938-6"
+         d="m 0.51925439,-6104.6362 0,52.1111 0.66227811,0"
+         style="fill:none;stroke:#000000;stroke-width:1.03850937px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(0,-1,1,0,6034.2893,1052.3361)"
+       style="display:inline"
+       id="g3940-84">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3918-8"
+         d="m -70.402496,-6034.7323 52.289736,0 0,0"
+         style="fill:none;stroke:#000000;stroke-width:0.9048447px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3938-2"
+         d="m 0.51925439,-6104.6362 0,52.1111 0.66227811,0"
+         style="fill:none;stroke:#000000;stroke-width:1.03850937px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="Symbols"
-     transform="translate(0,1686.614)">
+     transform="translate(70.866142,1757.4807)">
     <g
        inkscape:groupmode="layer"
        id="layer9"
@@ -839,7 +901,7 @@
      id="layer2"
      inkscape:label="Text - NA"
      style="display:none"
-     transform="translate(0,1686.614)">
+     transform="translate(70.866142,1757.4807)">
     <text
        xml:space="preserve"
        style="font-size:586.27496338px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:87.00000048%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:url(#linearGradient8901);fill-opacity:1;stroke:none;font-family:Bree Serif;-inkscape-font-specification:Bree Serif"
@@ -878,7 +940,7 @@
      id="layer3"
      inkscape:label="Text - EU"
      style="display:inline"
-     transform="translate(0,1686.614)">
+     transform="translate(70.866142,1757.4807)">
     <text
        xml:space="preserve"
        style="font-size:586.27496338px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:87.00000048%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:url(#linearGradient8944);fill-opacity:1;stroke:none;display:inline;font-family:Bree Serif;-inkscape-font-specification:Bree Serif"
@@ -938,7 +1000,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Text"
-     transform="translate(0,1686.614)">
+     transform="translate(70.866142,1757.4807)">
     <text
        xml:space="preserve"
        style="font-size:586.27496338px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:87.00000048%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#f2f0eb;fill-opacity:1;stroke:none;display:inline;font-family:Bree Serif;-inkscape-font-specification:Bree Serif"
@@ -960,7 +1022,7 @@
          style="font-weight:normal;fill:#f2f0eb;fill-opacity:1;-inkscape-font-specification:Bree Serif">THE</tspan><tspan
          sodipodi:role="line"
          x="2424.4915"
-         y="815.97638"
+         y="815.97632"
          id="tspan2997-4-3"
          style="font-weight:normal;fill:#f2f0eb;fill-opacity:1;-inkscape-font-specification:Bree Serif"><tspan
            dx="0 -14.805677 -14.805678 -23.659325"
