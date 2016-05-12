@@ -13,13 +13,18 @@ INPUT_EXTRA_FILES = \
 	sign-tall-main.svg \
 	badge-blank.svg \
 	badge-fill.svg \
-	badge-example.svg
+	badge-example.svg \
+	notebook.svg
 ifeq ('$(CONF)', 'na')
 INPUT_EXTRA_FILES += sign-tall-lolas.svg
 endif
 
 INPUT_CONF_FILES = $(addprefix $(CONF)/,$(INPUT_FILES) $(INPUT_EXTRA_FILES))
 OUTPUT_FILES = $(foreach file,$(INPUT_CONF_FILES),$(subst svg,pdf,$(file)))
+OUTPUT_EXTRA_FILES = \
+	notebook-foreground.pdf \
+	notebook-background.pdf \
+	notebook-combined.pdf
 
 INKSCAPE := $(shell which inkscape)
 INKSCAPE_OPTS = --export-text-to-path -z
@@ -73,6 +78,7 @@ $(CONF)/sign-tall-lolas.svg: sign-tall.svg
 		--show './/svg:g[@inkscape:label="Symbols"]/svg:g[@inkscape:label="Lolas"]' \
 		$? > $@
 
+# Badge
 .INTERMEDIATE: $(CONF)/badge-blank.svg \
 	$(CONF)/badge-fill.svg \
 	$(CONF)/badge-example.svg
@@ -93,6 +99,32 @@ $(CONF)/badge-example.svg: badge.svg
 	$(TRANSFORM) $(TRANSFORM_OPTS) \
 		--hide './/svg:g[@inkscape:label="Fill"]' \
 		--show './/svg:g[@inkscape:label="Example"]' \
+		$? > $@
+
+# Notebook
+.INTERMEDIATE: $(CONF)/notebook-foreground.svg \
+	$(CONF)/notebook-background.svg \
+	$(CONF)/notebook-combined.svg
+
+$(CONF)/notebook-foreground.svg: notebook.svg
+	$(TRANSFORM) $(TRANSFORM_OPTS) \
+		--hide './/svg:g[@inkscape:label="Guides"]' \
+		--hide './/svg:g[@inkscape:label="Background"]' \
+		--show './/svg:g[@inkscape:label="Foreground"]' \
+		$? > $@
+
+$(CONF)/notebook-background.svg: notebook.svg
+	$(TRANSFORM) $(TRANSFORM_OPTS) \
+		--hide './/svg:g[@inkscape:label="Guides"]' \
+		--hide './/svg:g[@inkscape:label="Foreground"]' \
+		--show './/svg:g[@inkscape:label="Background"]' \
+		$? > $@
+
+$(CONF)/notebook-combined.svg: notebook.svg
+	$(TRANSFORM) $(TRANSFORM_OPTS) \
+		--hide './/svg:g[@inkscape:label="Guides"]' \
+		--show './/svg:g[@inkscape:label="Foreground"]' \
+		--show './/svg:g[@inkscape:label="Background"]' \
 		$? > $@
 
 # General rules
