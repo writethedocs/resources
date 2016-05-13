@@ -6,7 +6,8 @@ INPUT_FILES = \
 	sign-large.svg \
 	hoodie.svg \
 	sticker.svg \
-	tshirt.svg
+	tshirt.svg \
+	bookmark.svg
 
 INPUT_EXTRA_FILES = \
 	sign-tall-registration.svg \
