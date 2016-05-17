@@ -1,0 +1,30 @@
+restrooms:
+  text: "Restrooms, this way:"
+bathroom:
+  text: Help yourself to whatever you need!
+coffee:
+  text: Help yourself to some coffee! Be sure to holler if we're running low
+registration:
+  text: You made it! Ask a volunteer for help getting your badge
+codeofconduct:
+  file: sign-handout.svg
+  text: >
+      Write the Docs aims to be a welcoming event,
+      where people meet in a friendly environment.
+      All participants are expected to show respect and courtesy
+      to other participants throughout the conferences.
+
+
+      In Short:
+
+      * Be kind and nice to folks.
+
+      * Behave professionally, think before you speak.
+
+      * Don't publish individual photographs of people without their consent.
+
+      * Harrassment and sexist, racist, or exclusionary jokes are not appropriate.
+
+
+      You can read the full Code of Conduct at
+      www.writethedocs.org/code-of-conduct
