@@ -3,7 +3,7 @@
 CONF ?= na
 
 INPUT_FILES = \
-	sign-large.svg \
+	sign-tall.svg \
 	hoodie.svg \
 	sticker.svg \
 	tshirt.svg \
@@ -13,7 +13,8 @@ BINGO_CARDS = $(addsuffix .svg,$(addprefix bingo-card-,0 1 2 3 4 5 6 7 8 9))
 BINGO_CARDS_OUTPUT = $(foreach file,$(BINGO_CARDS),$(subst svg,pdf,$(file)))
 
 INPUT_EXTRA_FILES = \
-	sign-tall.svg \
+	sign-large-banner.svg \
+	sign-large-stage.svg \
 	badge-blank.svg \
 	badge-fill.svg \
 	badge-example.svg \
@@ -66,6 +67,8 @@ deps:
 
 # Signs
 .INTERMEDIATE: $(CONF)/sign-tall.svg \
+	$(CONF)/sign-large-banner.svg \
+	$(CONF)/sign-large-stage.svg \
 	$(SIGN_OUTPUT_FILES) \
 	$(SIGN_FILES)
 
@@ -74,6 +77,37 @@ $(CONF)/sign-small-%.svg: sign-small-%.svg
 
 $(SIGN_FILES): sign-small.svg sign-handout.svg signs.yaml
 	python generate-small-signs.py
+
+# Large signs
+$(CONF)/sign-large-stage.svg: sign-large.svg
+ifeq ('$(CONF)', 'na')
+	$(eval CONF_SHOW = NA)
+	$(eval CONF_HIDE = EU)
+else
+	$(eval CONF_SHOW = EU)
+	$(eval CONF_HIDE = NA)
+endif
+	$(TRANSFORM) \
+		--hide './/svg:g[@inkscape:label="$(CONF_HIDE)"]' \
+		--show './/svg:g[@inkscape:label="$(CONF_SHOW)"]' \
+		--show './/svg:g[@inkscape:label="$(CONF_SHOW) Sponsors"]' \
+		--hide './/svg:g[@inkscape:label="$(CONF_SHOW) Date"]' \
+		$? > $@
+
+$(CONF)/sign-large-banner.svg: sign-large.svg
+ifeq ('$(CONF)', 'na')
+	$(eval CONF_SHOW = NA)
+	$(eval CONF_HIDE = EU)
+else
+	$(eval CONF_SHOW = EU)
+	$(eval CONF_HIDE = NA)
+endif
+	$(TRANSFORM) \
+		--hide './/svg:g[@inkscape:label="$(CONF_HIDE)"]' \
+		--show './/svg:g[@inkscape:label="$(CONF_SHOW)"]' \
+		--hide './/svg:g[@inkscape:label="$(CONF_SHOW) Sponsors"]' \
+		--show './/svg:g[@inkscape:label="$(CONF_SHOW) Date"]' \
+		$? > $@
 
 # Badge
 .INTERMEDIATE: $(CONF)/badge-blank.svg \
