@@ -3,7 +3,7 @@
 CONF ?= na
 
 INPUT_FILES = \
-	sign-large.svg \
+	sign-tall.svg \
 	hoodie.svg \
 	sticker.svg \
 	tshirt.svg \
@@ -13,7 +13,8 @@ BINGO_CARDS = $(addsuffix .svg,$(addprefix bingo-card-,0 1 2 3 4 5 6 7 8 9))
 BINGO_CARDS_OUTPUT = $(foreach file,$(BINGO_CARDS),$(subst svg,pdf,$(file)))
 
 INPUT_EXTRA_FILES = \
-	sign-tall.svg \
+	sign-large-banner.svg \
+	sign-large-stage.svg \
 	badge-blank.svg \
 	badge-fill.svg \
 	badge-example.svg \
