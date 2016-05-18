@@ -27,11 +27,9 @@ OUTPUT_EXTRA_FILES = \
 	notebook-background.pdf \
 	notebook-combined.pdf
 
-SIGN_OUTPUT_FILES = \
-	sign-handout-codeofconduct.svg \
-	sign-small-restrooms.svg \
-	sign-small-bathroom.svg \
-	sign-small-registration.svg
+SIGNS = $(shell python -c "import yaml; objs = yaml.load(open('signs.yaml')); print(' '.join(objs.keys()))")
+SIGN_FILES = $(addprefix sign-small-,$(addsuffix .svg, $(SIGNS)))
+SIGN_OUTPUT_FILES = $(addprefix $(CONF)/,$(SIGN_FILES))
 
 INKSCAPE := $(shell which inkscape)
 INKSCAPE_OPTS = --export-text-to-path -z
@@ -54,7 +52,7 @@ asset-pdfs: $(OUTPUT_FILES) $(OUTPUT_EXTRA_FILES)
 
 asset-images: $(CONF)/sticker.png
 
-asset-signs: $(foreach file,$(addprefix $(CONF)/,$(SIGN_OUTPUT_FILES)),$(subst svg,pdf,$(file)))
+asset-signs: $(foreach file,$(SIGN_OUTPUT_FILES),$(subst svg,pdf,$(file)))
 
 asset-bingo: $(foreach file,$(addprefix $(CONF)/,$(BINGO_CARDS)),$(subst svg,pdf,$(file)))
 
@@ -68,9 +66,13 @@ deps:
 
 # Signs
 .INTERMEDIATE: $(CONF)/sign-tall.svg \
-	$(SIGN_OUTPUT_FILES)
+	$(SIGN_OUTPUT_FILES) \
+	$(SIGN_FILES)
 
-$(SIGN_OUTPUT_FILES): sign-small.svg sign-handout.svg
+$(CONF)/sign-small-%.svg: sign-small-%.svg
+	mv $? $@
+
+$(SIGN_FILES): sign-small.svg sign-handout.svg signs.yaml
 	python generate-small-signs.py
 
 # Badge
