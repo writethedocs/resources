@@ -10,15 +10,11 @@ INPUT_FILES = \
 	bookmark.svg
 
 INPUT_EXTRA_FILES = \
-	sign-tall-registration.svg \
-	sign-tall-main.svg \
+	sign-tall.svg \
 	badge-blank.svg \
 	badge-fill.svg \
 	badge-example.svg \
 	notebook.svg
-ifeq ('$(CONF)', 'na')
-INPUT_EXTRA_FILES += sign-tall-lolas.svg
-endif
 
 INPUT_CONF_FILES = $(addprefix $(CONF)/,$(INPUT_FILES) $(INPUT_EXTRA_FILES))
 OUTPUT_FILES = $(foreach file,$(INPUT_CONF_FILES),$(subst svg,pdf,$(file)))
@@ -26,6 +22,12 @@ OUTPUT_EXTRA_FILES = \
 	notebook-foreground.pdf \
 	notebook-background.pdf \
 	notebook-combined.pdf
+
+SIGN_OUTPUT_FILES = \
+	sign-handout-codeofconduct.svg \
+	sign-small-restrooms.svg \
+	sign-small-bathroom.svg \
+	sign-small-registration.svg
 
 INKSCAPE := $(shell which inkscape)
 INKSCAPE_OPTS = --export-text-to-path -z
@@ -48,6 +50,8 @@ asset-pdfs: $(OUTPUT_FILES) $(OUTPUT_EXTRA_FILES)
 
 asset-images: $(CONF)/sticker.png
 
+asset-signs: $(foreach file,$(addprefix $(CONF)/,$(SIGN_OUTPUT_FILES)),$(subst svg,pdf,$(file)))
+
 clean:
 	-rm $(INPUT_CONF_FILES)
 	-rm $(OUTPUT_FILES)
@@ -56,28 +60,12 @@ clean:
 deps:
 	[ -d '$(CONF)/' ] || mkdir -p '$(CONF)/'
 
-# Specific rules
-.INTERMEDIATE: $(CONF)/sign-tall-registration.svg \
-	$(CONF)/sign-tall-main.svg \
-	$(CONF)/sign-tall-lolas.svg
+# Signs
+.INTERMEDIATE: $(CONF)/sign-tall.svg \
+	$(SIGN_OUTPUT_FILES)
 
-$(CONF)/sign-tall-registration.svg: sign-tall.svg
-	$(TRANSFORM) $(TRANSFORM_OPTS) \
-		--hide './/svg:g[@inkscape:label="Symbols"]/svg:g' \
-		--show './/svg:g[@inkscape:label="Symbols"]/svg:g[@inkscape:label="Registration"]' \
-		$? > $@
-
-$(CONF)/sign-tall-main.svg: sign-tall.svg
-	$(TRANSFORM) $(TRANSFORM_OPTS) \
-		--hide './/svg:g[@inkscape:label="Symbols"]/svg:g' \
-		--show './/svg:g[@inkscape:label="Symbols"]/svg:g[@inkscape:label="Main"]' \
-		$? > $@
-
-$(CONF)/sign-tall-lolas.svg: sign-tall.svg
-	$(TRANSFORM) $(TRANSFORM_OPTS) \
-		--hide './/svg:g[@inkscape:label="Symbols"]/svg:g' \
-		--show './/svg:g[@inkscape:label="Symbols"]/svg:g[@inkscape:label="Lolas"]' \
-		$? > $@
+$(SIGN_OUTPUT_FILES): sign-small.svg sign-handout.svg
+	python generate-small-signs.py
 
 # Badge
 .INTERMEDIATE: $(CONF)/badge-blank.svg \
