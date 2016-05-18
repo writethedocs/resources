@@ -1,11 +1,11 @@
 restrooms:
-  text: "Restrooms, this way:"
+  text: |
+      Restrooms,
+      this way:
 bathroom:
   text: Help yourself to whatever you need!
-coffee:
-  text: Help yourself to some coffee! Be sure to holler if we're running low
 registration:
-  text: You made it! Ask a volunteer for help getting your badge
+  text: You made it! Ask a volunteer for help finding your badge
 codeofconduct:
   file: sign-handout.svg
   text: >

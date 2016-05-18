@@ -27,7 +27,6 @@ SIGN_OUTPUT_FILES = \
 	sign-handout-codeofconduct.svg \
 	sign-small-restrooms.svg \
 	sign-small-bathroom.svg \
-	sign-small-coffee.svg \
 	sign-small-registration.svg
 
 INKSCAPE := $(shell which inkscape)
@@ -62,7 +61,8 @@ deps:
 	[ -d '$(CONF)/' ] || mkdir -p '$(CONF)/'
 
 # Signs
-.INTERMEDIATE: $(CONF)/sign-tall.svg
+.INTERMEDIATE: $(CONF)/sign-tall.svg \
+	$(SIGN_OUTPUT_FILES)
 
 $(SIGN_OUTPUT_FILES): sign-small.svg sign-handout.svg
 	python generate-small-signs.py
