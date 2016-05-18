@@ -28,3 +28,19 @@ codeofconduct:
 
       You can read the full Code of Conduct at
       www.writethedocs.org/code-of-conduct
+bathroom-inside:
+  text: >
+        If you're using this restroom and you think a person's gender doesn't match the sign on the door, follow these steps:
+        
+        * Don't worry about it, they know better than you.
+bathroom-basket:
+  title: We've got your back
+  text: >
+  	    Free to use!
+           
+      	Take what you need.
+      	Leave some for others.
+fun-1:
+  text: You look amazing today!
+fun-2:
+  text: Documentarians unite!
