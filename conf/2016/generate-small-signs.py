@@ -1,5 +1,6 @@
 from __future__ import print_function
 
+import os
 import sys
 import argparse
 import xml
@@ -18,6 +19,15 @@ def edit_svg_text(document, text=None, output=None):
     xpath = './/svg:flowRoot[@id="sign-text"]'
     try:
         for node in document.findall(xpath, ns):
+            style = node.get('style')
+            style_parts = style.split(';')
+            if len(text) > 128:
+                style_parts.append('font-size: 28px')
+            elif len(text) > 64:
+                style_parts.append('font-size: 36px')
+            elif len(text) > 32:
+                style_parts.append('font-size: 48px')
+            node.set('style', ';'.join(style_parts))
             for child in node.findall('svg:flowPara', ns):
                 node.remove(child)
             for line in text.split('\n'):
@@ -44,6 +54,6 @@ if __name__ == '__main__':
     for (sign_name, sign) in signs.items():
         filename = sign.get('file', 'sign-small.svg')
         document = parse(filename)
-        output_filename = filename.replace('.svg', '-{0}.svg'.format(sign_name))
+        output_filename = 'sign-small-{0}.svg'.format(sign_name)
         h = open(output_filename, 'w')
         edit_svg_text(document, text=sign.get('text'), output=h)
