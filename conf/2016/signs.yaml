@@ -89,3 +89,5 @@ conference:
       You're almost there!
 
       Registration and main event upstairs
+blank:
+  text: ""
