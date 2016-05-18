@@ -2,8 +2,6 @@ restrooms:
   text: |
       Restrooms,
       this way:
-bathroom:
-  text: Help yourself to whatever you need!
 registration:
   text: You made it! Ask a volunteer for help finding your badge
 codeofconduct:
@@ -28,7 +26,7 @@ codeofconduct:
 
       You can read the full Code of Conduct at
       www.writethedocs.org/code-of-conduct
-bathroom-inside:
+bathroom-door:
   text: >
         If you're using this restroom and you think a person's gender doesn't match the sign on the door, follow these steps:
         
