@@ -9,12 +9,16 @@ INPUT_FILES = \
 	tshirt.svg \
 	bookmark.svg
 
+BINGO_CARDS = $(addsuffix .svg,$(addprefix bingo-card-,0 1 2 3 4 5 6 7 8 9))
+BINGO_CARDS_OUTPUT = $(foreach file,$(BINGO_CARDS),$(subst svg,pdf,$(file)))
+
 INPUT_EXTRA_FILES = \
 	sign-tall.svg \
 	badge-blank.svg \
 	badge-fill.svg \
 	badge-example.svg \
-	notebook.svg
+	notebook.svg \
+	$(BINGO_CARDS)
 
 INPUT_CONF_FILES = $(addprefix $(CONF)/,$(INPUT_FILES) $(INPUT_EXTRA_FILES))
 OUTPUT_FILES = $(foreach file,$(INPUT_CONF_FILES),$(subst svg,pdf,$(file)))
@@ -44,13 +48,15 @@ TRANSFORM_OPTS = \
 endif
 
 # Rules
-assets: deps asset-pdfs asset-images
+assets: deps asset-pdfs asset-images assets-signs asset-bingo
 
 asset-pdfs: $(OUTPUT_FILES) $(OUTPUT_EXTRA_FILES)
 
 asset-images: $(CONF)/sticker.png
 
 asset-signs: $(foreach file,$(addprefix $(CONF)/,$(SIGN_OUTPUT_FILES)),$(subst svg,pdf,$(file)))
+
+asset-bingo: $(foreach file,$(addprefix $(CONF)/,$(BINGO_CARDS)),$(subst svg,pdf,$(file)))
 
 clean:
 	-rm $(INPUT_CONF_FILES)
@@ -115,6 +121,12 @@ $(CONF)/notebook-combined.svg: notebook.svg
 		--show './/svg:g[@inkscape:label="Foreground"]' \
 		--show './/svg:g[@inkscape:label="Background"]' \
 		$? > $@
+
+# Bingo
+.INTERMEDIATE: $(BINGO_CARDS)
+
+$(BINGO_CARDS): bingo.svg
+	python generate-bingo.py > $@
 
 # General rules
  $(CONF)/%.svg: %.svg
