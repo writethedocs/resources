@@ -2,6 +2,8 @@
 
 CONF ?= na
 
+# Files that go straight to output files, no layer manipulation to create
+# multiple files
 INPUT_FILES = \
 	sign-tall.svg \
 	hoodie.svg \
@@ -9,29 +11,43 @@ INPUT_FILES = \
 	tshirt.svg \
 	bookmark.svg
 
-BINGO_CARDS = $(addsuffix .svg,$(addprefix bingo-card-,0 1 2 3 4 5 6 7 8 9))
-BINGO_CARDS_OUTPUT = $(foreach file,$(BINGO_CARDS),$(subst svg,pdf,$(file)))
-
-INPUT_EXTRA_FILES = \
+SMALL_SIGNS = $(shell python -c "import yaml; objs = yaml.load(open('signs.yaml')); print(' '.join(objs.keys()))")
+SMALL_SIGNS_FILES = $(addprefix sign-small-,$(addsuffix .svg, $(SMALL_SIGNS)))
+LARGE_SIGNS_FILES = \
 	sign-large-banner.svg \
-	sign-large-stage.svg \
+	sign-large-stage.svg
+SIGN_FILES = $(SMALL_SIGNS_FILES) $(LARGE_SIGNS_FILES)
+
+BADGE_FILES = \
 	badge-blank.svg \
 	badge-fill.svg \
-	badge-example.svg \
-	notebook.svg \
-	$(BINGO_CARDS)
+	badge-example.svg
 
-INPUT_CONF_FILES = $(addprefix $(CONF)/,$(INPUT_FILES) $(INPUT_EXTRA_FILES))
-OUTPUT_FILES = $(foreach file,$(INPUT_CONF_FILES),$(subst svg,pdf,$(file)))
-OUTPUT_EXTRA_FILES = \
-	notebook-foreground.pdf \
-	notebook-background.pdf \
-	notebook-combined.pdf
+NOTEBOOK_FILES = \
+	notebook-foreground.svg \
+	notebook-background.svg \
+	notebook-combined.svg
 
-SIGNS = $(shell python -c "import yaml; objs = yaml.load(open('signs.yaml')); print(' '.join(objs.keys()))")
-SIGN_FILES = $(addprefix sign-small-,$(addsuffix .svg, $(SIGNS)))
-SIGN_OUTPUT_FILES = $(addprefix $(CONF)/,$(SIGN_FILES))
+BINGO_FILES = $(addsuffix .svg,$(addprefix bingo-card-,0 1 2 3 4 5 6 7 8 9))
 
+INPUT_GENERATED_FILES = \
+	$(BADGE_FILES) \
+	$(SIGN_FILES) \
+	$(NOTEBOOK_FILES)
+
+INPUT_CONF_FILES = $(addprefix $(CONF)/,$(INPUT_FILES) $(INPUT_GENERATED_FILES))
+OUTPUT_FILES = \
+	$(foreach file,$(INPUT_CONF_FILES),$(subst svg,pdf,$(file))) \
+	$(CONF)/bingo.pdf
+
+OUTPUT_IMAGE_FILES = \
+	$(CONF)/badge.png \
+	$(CONF)/notebook.png \
+	$(CONF)/tshirt.png \
+	$(CONF)/hoodie.png \
+	$(CONF)/sticker.png
+
+# Commands
 INKSCAPE := $(shell which inkscape)
 INKSCAPE_OPTS = --export-text-to-path -z
 
@@ -47,15 +63,11 @@ TRANSFORM_OPTS = \
 endif
 
 # Rules
-assets: deps asset-pdfs asset-images assets-signs asset-bingo
+assets: deps asset-pdfs asset-images
 
-asset-pdfs: $(OUTPUT_FILES) $(OUTPUT_EXTRA_FILES)
+asset-pdfs: $(OUTPUT_FILES)
 
-asset-images: $(CONF)/sticker.png
-
-asset-signs: $(foreach file,$(SIGN_OUTPUT_FILES),$(subst svg,pdf,$(file)))
-
-asset-bingo: $(foreach file,$(addprefix $(CONF)/,$(BINGO_CARDS)),$(subst svg,pdf,$(file)))
+asset-images: $(OUTPUT_IMAGE_FILES)
 
 clean:
 	-rm $(INPUT_CONF_FILES)
@@ -69,7 +81,6 @@ deps:
 .INTERMEDIATE: $(CONF)/sign-tall.svg \
 	$(CONF)/sign-large-banner.svg \
 	$(CONF)/sign-large-stage.svg \
-	$(SIGN_OUTPUT_FILES) \
 	$(SIGN_FILES)
 
 $(CONF)/sign-small-%.svg: sign-small-%.svg
@@ -110,9 +121,7 @@ endif
 		$? > $@
 
 # Badge
-.INTERMEDIATE: $(CONF)/badge-blank.svg \
-	$(CONF)/badge-fill.svg \
-	$(CONF)/badge-example.svg
+.INTERMEDIATE: $(addprefix $(CONF)/, $(BADGE_FILES))
 
 $(CONF)/badge-blank.svg: badge.svg
 	$(TRANSFORM) $(TRANSFORM_OPTS) \
@@ -133,9 +142,7 @@ $(CONF)/badge-example.svg: badge.svg
 		$? > $@
 
 # Notebook
-.INTERMEDIATE: $(CONF)/notebook-foreground.svg \
-	$(CONF)/notebook-background.svg \
-	$(CONF)/notebook-combined.svg
+.INTERMEDIATE: $(addprefix $(CONF)/, $(NOTEBOOK_FILES))
 
 $(CONF)/notebook-foreground.svg: notebook.svg
 	$(TRANSFORM) $(TRANSFORM_OPTS) \
@@ -159,13 +166,24 @@ $(CONF)/notebook-combined.svg: notebook.svg
 		$? > $@
 
 # Bingo
-.INTERMEDIATE: $(BINGO_CARDS)
+BINGO_PDF_FILES = $(foreach file,$(addprefix $(CONF)/,$(BINGO_FILES)),$(subst svg,pdf,$(file)))
 
-$(BINGO_CARDS): bingo.svg
+.INTERMEDIATE: $(BINGO_FILES) $(BINGO_PDF_FILES)
+
+$(BINGO_FILES): bingo.svg generate-bingo.py
 	python generate-bingo.py > $@
 
+# This isn't important, just cleaner than having 10 similar files laying around
+$(CONF)/bingo.pdf: $(BINGO_PDF_FILES)
+	@echo ""
+	@echo "ACHTUNG!"
+	@echo "You'll need to combine the bingo card PDF files into a single file"
+	@echo "manually. You can do this with OSX preview and I'm sure other tools."
+	@echo ""
+	cat $? > $@
+
 # General rules
- $(CONF)/%.svg: %.svg
+$(CONF)/%.svg: %.svg
 	$(TRANSFORM) $(TRANSFORM_OPTS) $? > $@
 
 # Image output
