@@ -45,7 +45,9 @@ OUTPUT_IMAGE_FILES = \
 	$(CONF)/notebook.png \
 	$(CONF)/tshirt.png \
 	$(CONF)/hoodie.png \
-	$(CONF)/sticker.png
+	$(CONF)/sticker.png \
+	$(CONF)/email-logo.png \
+	$(CONF)/site-logo.png
 
 # Commands
 INKSCAPE := $(shell which inkscape)
@@ -141,6 +143,15 @@ $(CONF)/badge-example.svg: badge.svg
 		--show './/svg:g[@inkscape:label="Example"]' \
 		$? > $@
 
+# Sticker
+$(CONF)/sticker.png: $(CONF)/sticker.svg
+ifndef INKSCAPE
+	echo 'Skipping Inkscape PNG generation, install Inkscape for PNG export'
+	exit 1
+else
+	$(INKSCAPE) $(INKSCAPE_OPTS) --export-dpi=600 --file=$? --export-png=$@
+endif
+
 # Notebook
 .INTERMEDIATE: $(addprefix $(CONF)/, $(NOTEBOOK_FILES))
 
@@ -192,7 +203,7 @@ ifndef INKSCAPE
 	echo 'Skipping Inkscape PNG generation, install Inkscape for PNG export'
 	exit 1
 else
-	$(INKSCAPE) $(INKSCAPE_OPTS) --export-dpi=600 --file=$? --export-png=$@
+	$(INKSCAPE) $(INKSCAPE_OPTS) --export-dpi=90 --file=$? --export-png=$@
 endif
 
 # PDF output
