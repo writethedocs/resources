@@ -144,6 +144,8 @@ $(CONF)/badge-example.svg: badge.svg
 		$? > $@
 
 # Sticker
+.INTERMEDIATE: $(CONF)/sticker.svg
+
 $(CONF)/sticker.png: $(CONF)/sticker.svg
 ifndef INKSCAPE
 	echo 'Skipping Inkscape PNG generation, install Inkscape for PNG export'
