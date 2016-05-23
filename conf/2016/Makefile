@@ -9,7 +9,8 @@ INPUT_FILES = \
 	hoodie.svg \
 	sticker.svg \
 	tshirt.svg \
-	bookmark.svg
+	bookmark.svg \
+	slide-title.svg
 
 SMALL_SIGNS = $(shell python -c "import yaml; objs = yaml.load(open('signs.yaml')); print(' '.join(objs.keys()))")
 SMALL_SIGNS_FILES = $(addprefix sign-small-,$(addsuffix .svg, $(SMALL_SIGNS)))
