@@ -9,12 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="315"
-   height="351"
+   width="630"
+   height="675"
    id="svg3952"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="hoodie.svg">
+   sodipodi:docname="tshirt.svg"
+   inkscape:export-filename="/Users/anthony/dev/writethedocs/resources/conf/2016/tshirt-text.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3954">
     <linearGradient
@@ -97,9 +100,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="56.77738"
-     inkscape:cy="184.28881"
+     inkscape:zoom="0.5"
+     inkscape:cx="4.5"
+     inkscape:cy="295.34719"
      inkscape:document-units="in"
      inkscape:current-layer="g3022"
      showgrid="false"
@@ -107,7 +110,7 @@
      inkscape:window-width="1366"
      inkscape:window-height="719"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -127,41 +130,41 @@
      inkscape:label="Common"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-701.35974)">
+     transform="translate(0,-377.35974)">
     <text
        transform="scale(0.98909513,1.0110251)"
        xml:space="preserve"
-       style="font-size:101.87374115px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:87.00000048%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#f0f0e3;fill-opacity:1;stroke:none;font-family:Bree Serif;-inkscape-font-specification:Bree Serif"
-       x="310.30627"
-       y="782.49701"
+       style="font-size:203.74749756px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:87.00000048%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#f0f0e3;fill-opacity:1;stroke:none;font-family:Bree Serif;-inkscape-font-specification:Bree Serif"
+       x="620.61261"
+       y="537.02118"
        id="text3143"
        sodipodi:linespacing="87%"><tspan
-         dx="0 0.8708902 0.8708902 0.8708902 -0.4354451"
+         dx="0 1.7417806 1.7417806 1.7417806 -0.87089032"
          sodipodi:role="line"
          id="tspan3145"
-         x="310.30627"
-         y="782.49701"
+         x="620.61261"
+         y="537.02118"
          style="font-weight:normal;fill:#f0f0e3;fill-opacity:1;-inkscape-font-specification:Bree Serif">WRITE</tspan><tspan
          sodipodi:role="line"
-         x="310.30627"
-         y="871.12714"
+         x="620.61261"
+         y="714.28149"
          id="tspan3147"
-         dx="0 0 -1.3854302"
+         dx="0 0 -2.7708607"
          style="font-weight:normal;fill:#f0f0e3;fill-opacity:1;-inkscape-font-specification:Bree Serif">THE</tspan><tspan
          sodipodi:role="line"
-         x="310.30627"
-         y="959.75732"
+         x="620.61261"
+         y="891.54181"
          id="tspan3149"
          style="font-weight:normal;fill:#f0f0e3;fill-opacity:1;-inkscape-font-specification:Bree Serif"><tspan
            style="font-weight:normal;fill:#f0f0e3;fill-opacity:1;-inkscape-font-specification:Bree Serif"
            id="tspan3151"
-           dx="0 -3.0081453 -3.008146 -4.0372262">DOCS</tspan></tspan></text>
+           dx="0 -6.0162911 -6.0162926 -8.0744534">DOCS</tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Text"
-     transform="translate(0,-41.399994)">
+     transform="translate(0,282.60001)">
     <g
        inkscape:groupmode="layer"
        id="layer3"
@@ -170,18 +173,18 @@
        wtd="na">
       <text
          xml:space="preserve"
-         style="font-size:46.97864532px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;stroke:none;font-family:Aleo;-inkscape-font-specification:Aleo Light"
-         x="306.68311"
-         y="368.72754"
+         style="font-size:93.95729828px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;stroke:none;font-family:Aleo;-inkscape-font-specification:Aleo Light"
+         x="612.31262"
+         y="359.28806"
          id="text3153"
          sodipodi:linespacing="116%"
          transform="scale(0.9968902,1.0031195)"><tspan
-           dx="0 0 -3.4014866 -3.8017344 0.40024775 -1 -1 0.40024775"
+           dx="0 0 -6.8029742 -7.6034698 0.80049556 -2.0000002 -2.0000002 0.80049556"
            sodipodi:role="line"
-           x="306.68314"
-           y="368.72754"
+           x="612.31262"
+           y="359.28806"
            id="tspan3157"
-           style="font-size:55px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light">PORTLAND</tspan></text>
+           style="font-size:110.00001526px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light">PORTLAND</tspan></text>
     </g>
     <g
        inkscape:label="EU"
@@ -191,18 +194,19 @@
        wtd="eu">
       <text
          xml:space="preserve"
-         style="font-size:46.97864532px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;stroke:none;display:inline;font-family:Aleo;-inkscape-font-specification:Aleo Light"
-         x="306.68311"
-         y="368.72754"
+         style="font-size:117.19602966px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;stroke:none;display:inline;font-family:Aleo;-inkscape-font-specification:Aleo Light"
+         x="618.25134"
+         y="378.74078"
          id="text3153-6"
          sodipodi:linespacing="116%"
          transform="scale(0.9968902,1.0031195)"><tspan
            sodipodi:role="line"
-           x="306.68311"
-           y="368.72754"
+           x="618.25134"
+           y="378.74078"
            id="tspan3157-6"
-           style="font-size:55px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light"
-           dx="0 -1 1 -4 2 1">PRAGUE</tspan></text>
+           style="font-size:137.20663452px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light"
+           dx="0 -8.4946661 0.4946661 -13.978664 0.9893322 0.4946661"
+           dy="0 -1.0211001e-09">PRAGUE</tspan></text>
     </g>
   </g>
 </svg>
