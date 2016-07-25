@@ -101,17 +101,17 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="257.5"
+     inkscape:cx="4.5"
      inkscape:cy="295.34719"
      inkscape:document-units="in"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3022"
      showgrid="false"
      units="in"
      inkscape:window-width="1366"
      inkscape:window-height="719"
-     inkscape:window-x="28"
-     inkscape:window-y="10"
-     inkscape:window-maximized="0"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true" />
   <metadata
@@ -122,7 +122,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -194,18 +194,19 @@
        wtd="eu">
       <text
          xml:space="preserve"
-         style="font-size:93.95729828px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;stroke:none;display:inline;font-family:Aleo;-inkscape-font-specification:Aleo Light"
-         x="542.09314"
-         y="359.28806"
+         style="font-size:117.19602966px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;stroke:none;display:inline;font-family:Aleo;-inkscape-font-specification:Aleo Light"
+         x="618.25134"
+         y="378.74078"
          id="text3153-6"
          sodipodi:linespacing="116%"
          transform="scale(0.9968902,1.0031195)"><tspan
            sodipodi:role="line"
-           x="542.09314"
-           y="359.28806"
+           x="618.25134"
+           y="378.74078"
            id="tspan3157-6"
-           style="font-size:110.00001526px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light"
-           dx="0 -2.0000002 2.0000002 -8.000001 4.0000005 2.0000002">PRAGUE</tspan></text>
+           style="font-size:137.20663452px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:end;line-height:115.99999666%;writing-mode:lr-tb;text-anchor:end;fill:#0bbbff;fill-opacity:1;font-family:Aleo;-inkscape-font-specification:Aleo Light"
+           dx="0 -8.4946661 0.4946661 -13.978664 0.9893322 0.4946661"
+           dy="0 -1.0211001e-09">PRAGUE</tspan></text>
     </g>
   </g>
 </svg>
