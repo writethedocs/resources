@@ -1,4 +1,4 @@
-# WTD generated output
+ 2016-eu-tall-sign# WTD generated output
 
 CONF ?= na
 
@@ -13,6 +13,11 @@ INPUT_FILES = \
 	slide-title.svg
 
 SMALL_SIGNS = $(shell python -c "import yaml; objs = yaml.load(open('$(CONF)/signs.yaml')); print(' '.join(objs.keys()))")
+
+ifeq "$(CONF)" "eu"
+INPUT_FILES += sign-tall-eu.svg
+endif
+
 SMALL_SIGNS_FILES = $(addprefix sign-small-,$(addsuffix .svg, $(SMALL_SIGNS)))
 LARGE_SIGNS_FILES = \
 	sign-large-banner.svg \
