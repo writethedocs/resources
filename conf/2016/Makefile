@@ -12,7 +12,7 @@ INPUT_FILES = \
 	bookmark.svg \
 	slide-title.svg
 
-SMALL_SIGNS = $(shell python -c "import yaml; objs = yaml.load(open('signs.yaml')); print(' '.join(objs.keys()))")
+SMALL_SIGNS = $(shell python -c "import yaml; objs = yaml.load(open('$(CONF)/signs.yaml')); print(' '.join(objs.keys()))")
 SMALL_SIGNS_FILES = $(addprefix sign-small-,$(addsuffix .svg, $(SMALL_SIGNS)))
 LARGE_SIGNS_FILES = \
 	sign-large-banner.svg \
@@ -87,10 +87,11 @@ deps:
 	$(SIGN_FILES)
 
 $(CONF)/sign-small-%.svg: sign-small-%.svg
-	mv $? $@
+	$(TRANSFORM) $(TRANSFORM_OPTS) $? > $@
+	rm $?
 
-$(SIGN_FILES): sign-small.svg sign-handout.svg signs.yaml
-	python generate-small-signs.py
+$(SIGN_FILES): sign-small.svg sign-handout.svg $(CONF)/signs.yaml
+	python generate-small-signs.py $(CONF)/signs.yaml
 
 # Large signs
 $(CONF)/sign-large-stage.svg: sign-large.svg
