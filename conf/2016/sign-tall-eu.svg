@@ -28,7 +28,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.072805814"
-     inkscape:cx="1553.618"
+     inkscape:cx="-863.77136"
      inkscape:cy="3417.3537"
      inkscape:document-units="cm"
      inkscape:current-layer="layer4"
@@ -47,6 +47,10 @@
        id="guide3462"
        inkscape:label=""
        inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="370.8495,3804.6412"
+       orientation="1,0"
+       id="guide4151" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -56,7 +60,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -107,17 +111,17 @@
      transform="translate(0,1686.6142)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:814.71508789px;line-height:87.00000048%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;display:inline;fill:#18a9fd;fill-opacity:1;stroke:none"
-       x="2656.5371"
-       y="1832.2068"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:957.23168945px;line-height:87.00000048%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;display:inline;fill:#18a9fd;fill-opacity:1;stroke:none"
+       x="2662.1763"
+       y="1624.6731"
        id="text2989-4-4-8"
        sodipodi:linespacing="87%"><tspan
          sodipodi:role="line"
-         x="2656.5371"
-         y="1832.2068"
+         x="2662.1763"
+         y="1624.6731"
          id="tspan2997-4-2-2"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:499.43664551px;line-height:87.00000048%;font-family:Aleo;-inkscape-font-specification:'Aleo Light';text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#18a9fd;fill-opacity:1"
-         dx="0 -29.838602 -5.96772 -59.677204 -11.93544 -5.96772">PRAGUE</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:586.80218506px;line-height:87.00000048%;font-family:Aleo;-inkscape-font-specification:'Aleo Light';text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#18a9fd;fill-opacity:1"
+         dx="0 -35.058212 -7.0116425 -70.116425 -14.023285 -7.0116425">PRAGUE</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:423.53512573px;line-height:137.99999952%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#ffffff;fill-opacity:0.54054051;stroke:none"
@@ -148,7 +152,7 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:775.84411621px;line-height:87.00000048%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;display:inline;fill:#f2f0eb;fill-opacity:1;stroke:none"
        x="2659.7615"
-       y="-27.683647"
+       y="-297.68365"
        id="text2989-6-4"
        sodipodi:linespacing="87%"
        inkscape:export-xdpi="45.023571"
@@ -156,18 +160,18 @@
          sodipodi:role="line"
          id="tspan2991-3-5"
          x="2659.7615"
-         y="-27.683647"
+         y="-297.68365"
          style="font-weight:normal;-inkscape-font-specification:'Bree Serif';fill:#f2f0eb;fill-opacity:1"
          dx="0 7.758441 7.758441 7.758441">WRITE</tspan><tspan
          sodipodi:role="line"
          x="2659.7615"
-         y="647.30072"
+         y="377.30072"
          id="tspan2993-4-8"
          dx="0 0 -7.7978272"
          style="font-weight:normal;-inkscape-font-specification:'Bree Serif';fill:#f2f0eb;fill-opacity:1">THE</tspan><tspan
          sodipodi:role="line"
          x="2659.7615"
-         y="1322.2852"
+         y="1052.2852"
          id="tspan2997-4-3"
          style="font-weight:normal;-inkscape-font-specification:'Bree Serif';fill:#f2f0eb;fill-opacity:1"><tspan
            dx="0 -19.593023 -19.593025 -31.309458"
