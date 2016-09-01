@@ -4,6 +4,7 @@ import os
 import sys
 import argparse
 import xml
+import fileinput
 from xml.etree.ElementTree import parse, register_namespace, Element
 
 import yaml
@@ -49,7 +50,7 @@ if __name__ == '__main__':
     register_namespace('inkscape', 'http://www.inkscape.org/namespaces/inkscape')
     register_namespace('', 'http://www.w3.org/2000/svg')
 
-    signs = yaml.load(open('signs.yaml'))
+    signs = yaml.load(''.join(fileinput.input()))
 
     for (sign_name, sign) in signs.items():
         filename = sign.get('file', 'sign-small.svg')

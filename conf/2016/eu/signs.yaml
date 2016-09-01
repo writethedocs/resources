@@ -1,0 +1,75 @@
+restrooms:
+  text: |
+      Restrooms
+
+      This way
+registration:
+  text: You made it! Ask a volunteer for help finding your badge
+codeofconduct:
+  file: sign-handout.svg
+  text: >
+      Write the Docs aims to be a welcoming event,
+      where people meet in a friendly environment.
+      All participants are expected to show respect and courtesy
+      to other participants throughout the conferences.
+
+
+      In Short:
+
+      * Be kind and nice to folks.
+
+      * Behave professionally, think before you speak.
+
+      * Don't publish individual photographs of people without their consent.
+
+      * Harrassment and sexist, racist, or exclusionary jokes are not appropriate.
+
+
+      You can read the full Code of Conduct at
+      www.writethedocs.org/code-of-conduct
+bathroom-door:
+  text: >
+      If you're using this restroom and you think a person's gender doesn't
+      match the sign on the door, follow these steps:
+
+
+      Don't worry about it, they know better than you.
+bathroom-basket:
+  text: |
+      We've got your back
+
+      Free to use!
+
+      Take what you need.
+      Leave some for others.
+fun-1:
+  text: You look amazing today!
+fun-2:
+  text: Documentarians unite!
+fun-3:
+  text: Docs or it didn't happen!
+coffee:
+  text: |
+      Help yourself to some coffee
+
+      Holler if we're running low!
+preconference-writingday:
+  text: |
+      Writing Day
+
+      This way!
+preconference-registration:
+  text: |
+      Registration
+
+      This direction!
+speakerroom:
+  text: |
+      Speaker Room
+conference:
+  text: |
+      You're almost there!
+
+      Registration and main event this way
+blank:
+  text: ""
