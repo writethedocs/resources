@@ -1,4 +1,4 @@
- 2016-eu-tall-sign# WTD generated output
+# WTD generated output
 
 CONF ?= na
 
