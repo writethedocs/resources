@@ -7,33 +7,32 @@ import random
 from xml.etree.ElementTree import parse, register_namespace, Element
 
 
-PHRASES = [
-    'Ask a speaker a question',
-    'Introduce yourself to someone new',
-    'Talk to someone from Google',
-    'Join a group conversation',
-    'Tweet about a talk',
-    'Meet a Github rep',
-    'Attend an unconference session',
-    'Mingle with WTD folks outside the venue',
-    'Thank a volunteer or organizer',
-    'Exercise with WTD folks (run/hike/walk)',
-    'Chat with a Mozilla developer',
-    'Take a Lola\'s room break',
-    'Say hello in the WTD slack channel',
-    'Give your business card to someone',
-    'Wear a piece of swag',
-    'Attend the Welcome Wagon tour',
-    'Grab a snack',
-    'Attend the conference opening party',
-    'Brainstorm a lightning talk for next year',
-    'Talk to a neighbor',
-    'Leave a spot in your group for someone to join',
-    'Drink water',
-    'Relax at the Monday night party',
-    'Go to Writing Day',
-]
+PHRASE_STRING = """Ask a speaker a question
+Introduce yourself to someone new
+Talk to someone from Google
+Chat with someone from stickermule
+Join a group conversation 
+Tweet about a talk
+Decorate your name tag
+Attend an unconference session
+Mingle with WTD peeps outside of the conference
+Thank a volunteer
+Journal your experiences
+Sneak away to Lola’s room
+Say hello in the WTD slack channel
+Connect with someone here on social media or LinkedIn
+Wear a piece of swag
+Attend the Welcome Wagon tour
+Grab a snack
+Attend the conference opening party
+Brainstorm a lightning talk for next year
+Talk to your neighbor at a round table
+Leave a spot for someone to join your group
+Take a drink
+Relax at the Monday night party
+Go to the writing day"""
 
+PHRASES = PHRASE_STRING.split('\n')
 
 def replace_text(document, output=None):
     if output is None:
