@@ -12,7 +12,7 @@ The yearly colors for web and print assets follow a 4-year rotation:
 - Coral 
 - Blue
 
-The style sheet with web and print color guidelines can be found here: conf/STYLE SHEET 2023.pdf
+The style sheet with web and print color guidelines can be found here: [conf/STYLE SHEET 2023.pdf](https://github.com/writethedocs/resources/blob/042ae6379ac598f6e359daf49e6e88bb80c1bad1/conf/STYLE%20SHEET%202023.pdf)
 
 # Vendors
 
