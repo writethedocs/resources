@@ -7,10 +7,12 @@ meetups.
 
 The yearly colors for web and print assets follow a 4-year rotation:
 
-- Gold (ref https://github.com/writethedocs/resources/blob/master/conf/2017/STYLE%20SHEET.pdf)
-- Green (ref https://github.com/writethedocs/resources/blob/master/conf/2018/STYLE-SHEET-2018.pdf)
-- Coral (ref https://github.com/writethedocs/resources/blob/master/conf/2019/STYLE%20SHEET%202019-2020.pdf bottom-left swatch)
-- Blue (ref https://github.com/writethedocs/resources/blob/master/conf/2019/STYLE%20SHEET%202019-2020.pdf top-right swatch)
+- Gold
+- Green 
+- Coral 
+- Blue
+
+The style sheet with web and print color guidelines can be found here: conf/STYLE SHEET 2023.pdf
 
 # Vendors
 
