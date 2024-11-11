@@ -43,7 +43,7 @@ Shirts & hoodies: https://teespring.com/
 
 Shirts and hoodies: Transparent PNG, 300 DPI, 4800x4200px or similar depending on actual text
 
-Sketchnotes: JPEG, 300 DPI, 12000x8400px landscape or similar to fit into an 8"x10" print
+Sketchnotes: JPEG, 300 DPI, landscape 12000x8400px to fit into an 8"x10" print
 
 # License
 
