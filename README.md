@@ -1,7 +1,6 @@
 # Resources
 
-This repository contains the image assets for the Write the Docs conference and
-meetups.
+This repository contains the image assets for the Write the Docs conference and meetups.
 
 ## Conference colors
 
@@ -26,7 +25,9 @@ Stickers: https://www.stickermule.com/
 
 Notebooks: https://scoutbooks.com/
 
-## NA
+Swag shop and sketchnote prints: https://www.threadless.com/
+
+## Portland
 
 Shirts & hoodies: http://bluemillscreenprint.com/
 
@@ -34,13 +35,15 @@ Large signs & banners: http://www.joesignshop.com/
 
 Badges & small signs: http://www.copymanportland.com/
 
-## EU
+## Atlantic
 
-Shirts & hoodies: http://www.optiger.cz/
+Shirts & hoodies: https://teespring.com/
 
-Badges: http://www.hunpress.com/
+## Graphic specifications
 
-Roll-up & small signs: https://www.copygeneral.cz/
+Shirts and hoodies: PNG with transparency, 4200x4800px (300DPI)
+
+Sketchnotes: JPEG, 12000x8400px (300DPI)
 
 # License
 
