@@ -198,7 +198,7 @@ $(CONF)/bingo.pdf: $(BINGO_PDF_FILES)
 	@echo ""
 	@echo "ACHTUNG!"
 	@echo "You'll need to combine the bingo card PDF files into a single file"
-	@echo "manually. You can do this with OSX preview and I'm sure other tools."
+	@echo "manually. You can do this with macOS preview and I'm sure other tools."
 	@echo ""
 	cat $? > $@
 
